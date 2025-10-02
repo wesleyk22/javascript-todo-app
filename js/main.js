@@ -399,32 +399,3 @@ modalYesButton.addEventListener("click", function() {
     modal.style.display = "none";
 });
 
-
-
-
-/* Commenting this out for now since I don't like the animations, but they are a 
-cool thing that I can add and helps me know how I can use fontawesome along
-with javascript to create animations, I will probably just use them in a different 
-spot in the app though if I can find one, cause I just don't like them where
-they are at currently */
-
-/* Loop through all of the big buttons, and make sure
- * that when they are hovered, their inner icon is
- * animated */
-
-// const panelButtons = document.querySelectorAll('.big-btn');
-// panelButtons.forEach((panelButton) => {
-//     panelButton.addEventListener('mouseover', () => {
-//         console.log("Hovered this button")
-//         // Target the icon and add the animation
-//         const icon = panelButton.querySelector('i');
-//         icon.classList.add("fa-fade");
-        
-//     });
-//     panelButton.addEventListener('mouseout', () => {
-//         console.log("left this button")
-//         const icon = panelButton.querySelector('i');
-//         icon.classList.remove("fa-fade");
-//     });
-// });
-
