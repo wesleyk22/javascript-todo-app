@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley's To-do App</title>
+    <script src="https://kit.fontawesome.com/9ed2606c62.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="centered-container">
+        <header class="title-panel text-lg">To-do app</header>
+        <section class="main-panel ">
+            <div class="scrollable-list text-sm">
+                <!-- Tasks will be added into here -->
+            </div>
+            <div class="buttons-panel">
+                <button type="button" class="big-btn text-sm add-btn">
+                  <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="big-btn text-sm uncheck-btn">
+                    <i class="fa fa-repeat fa-2x" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="big-btn text-sm del-btn">
+                    <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 class="text-lg">Modal Title</h2>
+            <p class="text-sm">Modal description</p>
+            <div class="modal-buttons-panel">
+                <button type="button" class="small-btn modal-cancel-button">Cancel</button>
+                <button type="button" class="small-btn modal-yes-button">Yes</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
