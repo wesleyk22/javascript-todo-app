@@ -5,7 +5,6 @@
 }
 
 /* Background color & gradient */
-
 body {
     background-color: #828282;
 }
@@ -265,9 +264,6 @@ on and off with javascript) */
     color: var(--text-color);
 }
 
-
-
-
 /* Styling for the tooltip that will be above panel buttons*/
 .tooltip {
     position: absolute;
@@ -328,10 +324,6 @@ on and off with javascript) */
 
 /* Styling for the editable text (once clicked it turns into text-input) */
 .editable-text {
-    /* transition: background-color 0.1s ease-in-out; */
-    /* overflow:hidden; */
-    /* white-space: nowrap; */
-    /* text-overflow: ellipsis;  */
     word-wrap: break-word; /* Makes it so longer words break onto next line */
     white-space: normal;
     border-radius: 10px;
@@ -381,7 +373,6 @@ on and off with javascript) */
         font-size: 1.7em;
     }
 }
-
 
 @media (max-height: 650px) {
     .buttons-panel button i {
