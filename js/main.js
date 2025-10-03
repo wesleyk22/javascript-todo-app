@@ -202,19 +202,6 @@ function createEditableText(textContent) {
         
         // Add event listener that will call the resizeHeight function
         inputField.addEventListener("input", resizeHeight);
-        
-        /* Adding an event listener to make sure that the horizontal scroll bar,
-         * while it's not visible, doesn't move to the right at all. There is a case
-         * where it can move to the right when the spacebar is held on the text-input
-         * field, so I'm gonna add this event listener to combat this problem */
-        // I dont like this solution commenting out for now
-        // inputField.addEventListener("input", function() {
-        //     setTimeout(() => {
-        //         scrollableList.scrollLeft = 0;
-        //     }, 1);
-            
-        //     console.log("scrolling all the way to left (with delay now)");
-        // });
 
         /* Adding an event listener that doesn't allow for more than 3 spaces to
          * prevent layout bugs/unwanted behavior for holding spacebar and adding lots of
