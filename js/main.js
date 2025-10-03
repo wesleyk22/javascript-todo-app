@@ -3,15 +3,6 @@ const scrollableList = document.querySelector('.scrollable-list');
 // Global variable for checking if the saved tasks are loaded
 let savedTasksLoaded = false;
 
-/* Function to create a "template" number of taskItem elements, will 
- * be named task1, task2, task3, etc. (not used in final product but was
- * used for testing in the beginning) */
-function createTemplateTasks(numOfTasks) {
-    for (let i = 0; i < numOfTasks; i++) {
-        addTask("Task #" + (i+1), false);
-    }
-};
-
 function loadSavedTasks() {
     console.log("Loading saved tasks...")
     /* Declare a variable savedTasks that will refer to the taskList that we get
@@ -75,8 +66,6 @@ function saveTasks() {
      * key of "taskList". The value is a stringified array that can then be parsed later
      * in the loadSavedTasks function. */
     localStorage.setItem("taskList", JSON.stringify(tasksToSave));
-    
-
 }
 
 /* Function to add tasks with parameters of taskName, and whether or not is
@@ -282,14 +271,12 @@ document.querySelectorAll(".add-btn, .uncheck-btn, .del-btn").forEach(button => 
         setTimeout(() => {
             tooltip.style.opacity = "1";
         }, 0); // can adjust this delay depending on how long it should take to appear after hovering
-        // tooltip.style.opacity = "1";
 
         // Event listener for when the mouse moves out to remove the tooltip
         event.currentTarget.addEventListener("mouseleave", function () {
             // Smooth fadeout before removing using setTimeout()
             tooltip.style.opacity = "0";
             setTimeout(() => tooltip.remove(), 300);
-            // tooltip.remove();
         });
     });
 });
