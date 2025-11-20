@@ -9,7 +9,7 @@ delete them. All data for the project is stored in Javascript localstorage.
 
 ## What I personally learned from building this project
 
-In this project, I focused on a lot of foundational javascript concepts for front end development. I learned how to use event listeners, how to select DOM elements, adding/removing class elements from DOM elements. I learned how add interactivity with tool tips and animated icons. I also learned how to create a modal. I also became more comfortable with using the Javascript localstorage system, serializing objects by converting them into strings and then parsing them to load them again.
+In this project, I focused on a lot of foundational javascript concepts for front end development. I learned how to use event listeners, how to select DOM elements, adding/removing class elements from DOM elements. I learned how add interactivity with tool tips and animated icons. I also learned how to create a modal. I also became more comfortable with using the Javascript localstorage system, serializing objects by converting them into strings and then parsing them to load them again. I also polished some of my HTML & CSS skills as well making sure to incorporate responsive design and tried to make the UI look clean with rounded edges and smooth gradients, using font awesome icons as well. Overall this project was my first steps towards learning front end development and learning raw javascript before trying to learn a framework.
 
 ## How to run the program
 
